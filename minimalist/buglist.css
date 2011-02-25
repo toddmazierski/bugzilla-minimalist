@@ -1,0 +1,168 @@
+/* The contents of this file are subject to the Mozilla Public
+  * License Version 1.1 (the "License"); you may not use this file
+  * except in compliance with the License. You may obtain a copy of
+  * the License at http://www.mozilla.org/MPL/
+  *
+  * Software distributed under the License is distributed on an "AS
+  * IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or
+  * implied. See the License for the specific language governing
+  * rights and limitations under the License.
+  *
+  * The Original Code is the Bugzilla Bug Tracking System.
+  *
+  * The Initial Developer of the Original Code is Mike Schrag.
+  * Portions created by Marc Schumann are Copyright (c) 2007 Mike Schrag.
+  * All rights reserved.
+  *
+  * Contributor(s): Mike Schrag <mschrag@pobox.com>
+  *                 Byron Jones <bugzilla@glob.com.au>
+  *                 Marc Schumann <wurblzap@gmail.com>
+  */
+
+/* Reverse the "Severity" shading inherited by the "Standard" skin */
+
+.bz_critical {
+    color: black;
+}
+
+.bz_blocker {
+    color: black;
+    font-weight: normal;
+}
+
+.bz_enhancement {
+    color: black;
+}
+
+/* Make the bug ID bold */
+
+.bz_id_column{
+    font-weight: bold
+}
+
+/* "Severity" shading, values used:  HSV 0,50,100 to 120,50,100 */
+
+tr.bz_enhancement.bz_row_even td.bz_bug_severity_column{
+    background-color: #7FFF7F;
+}
+
+tr.bz_trivial.bz_row_even td.bz_bug_severity_column{
+    background-color: #AAFF7F;
+}
+
+tr.bz_minor.bz_row_even td.bz_bug_severity_column{
+    background-color: #D4FF7F;
+}
+
+tr.bz_normal.bz_row_even td.bz_bug_severity_column{
+    background-color: #FFFF7F;
+}
+
+tr.bz_major.bz_row_even td.bz_bug_severity_column{
+    background-color: #FFD47F;
+}
+
+tr.bz_critical.bz_row_even td.bz_bug_severity_column{
+    background-color: #FFAA7F;
+}
+
+tr.bz_blocker.bz_row_even td.bz_bug_severity_column{
+    background-color: #FF7F7F;
+}
+
+tr.bz_enhancement.bz_row_odd td.bz_bug_severity_column{
+    background-color: #79F279;
+}
+
+tr.bz_trivial.bz_row_odd td.bz_bug_severity_column{
+    background-color: #A1F279;
+}
+
+tr.bz_minor.bz_row_odd td.bz_bug_severity_column{
+    background-color: #C9F279;
+}
+
+tr.bz_normal.bz_row_odd td.bz_bug_severity_column{
+    background-color: #F2F279;
+}
+
+tr.bz_major.bz_row_odd td.bz_bug_severity_column{
+    background-color: #F2C979;
+}
+
+tr.bz_critical.bz_row_odd td.bz_bug_severity_column{
+    background-color: #F2A179;
+}
+
+tr.bz_blocker.bz_row_odd td.bz_bug_severity_column{
+    background-color: #F27979;
+}
+
+/* "Priority" shading, values used:  HSV 0,50,100 to 120,50,100 */
+
+tr.bz_P1.bz_row_even td.bz_priority_column {
+    background-color: #FF7F7F;
+}
+
+tr.bz_P2.bz_row_even td.bz_priority_column {
+    background-color: #FFBF7F;
+}
+
+tr.bz_P3.bz_row_even td.bz_priority_column {
+    background-color: #FFFF7F;
+}
+
+tr.bz_P4.bz_row_even td.bz_priority_column {
+    background-color: #BFFF7F;
+}
+
+tr.bz_P5.bz_row_even td.bz_priority_column {
+    background-color: #7FFF7F;
+}
+
+tr.bz_P1.bz_row_odd td.bz_priority_column {
+    background-color: #F27979;
+}
+
+tr.bz_P2.bz_row_odd td.bz_priority_column {
+    background-color: #F2B579;
+}
+
+tr.bz_P3.bz_row_odd td.bz_priority_column {
+    background-color: #F2F279;
+}
+
+tr.bz_P4.bz_row_odd td.bz_priority_column {
+    background-color: #B5F279;
+}
+
+tr.bz_P5.bz_row_odd td.bz_priority_column {
+    background-color: #79F279;
+}
+
+/* Replace the browser names with icons in the "Platform" column */
+
+span[title="Internet Explorer"] {
+    color: transparent;
+    background: url(buglist/browser_ie-icon.png) no-repeat;
+}
+
+span[title="Firefox"] {
+    color: transparent;
+    background: url(buglist/browser_ff-icon.png) no-repeat;
+}
+
+span[title="Safari"] {
+    color: transparent;
+    background: url(buglist/browser_s-icon.png) no-repeat;
+}
+
+span[title="Google Chrome"] {
+    color: transparent;
+    background: url(buglist/browser_gc-icon.png) no-repeat;
+}
+
+span[title="Opera"] {
+    color: transparent;
+    background: url(buglist/browser_o-icon.png) no-repeat;
+}

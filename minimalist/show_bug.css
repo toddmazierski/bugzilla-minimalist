@@ -1,0 +1,27 @@
+/*
+ * Custom rules for show_bug.css.
+ * The rules you put here override rules in that stylesheet.
+ */
+
+/* The "Attachments" panel header is an empty anchor, so I'd prefer it not appear as a link. */
+
+#a0 {
+    color: black;
+}
+
+.bz_alias_short_desc_container {
+    /* Rounded corners for Safari & Google Chrome */
+    -webkit-border-radius: 5px;
+}
+
+/* A really hacky fix to get the edge of the "Save Changes" button from not touching the right side of the bug panel. */
+.bz_bug .edit_form {
+    width: 99%;
+}
+
+/* Reduce the visual impact of the timestamp in each comment. */
+
+.bz_comment_time {
+    color: #aaa;
+    font-weight: normal;
+}

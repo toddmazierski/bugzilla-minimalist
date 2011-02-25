@@ -1,0 +1,11 @@
+/*
+ * Custom rules for show_multiple.css.
+ * The rules you put here override rules in that stylesheet.
+ */
+
+ /* Reduce the visual impact of the timestamp in each comment. */
+
+.bz_comment_time {
+    color: #aaa;
+    font-weight: normal;
+}
