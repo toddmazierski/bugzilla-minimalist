@@ -34,6 +34,16 @@
     color: black;
 }
 
+/* Improve the readability of the "Summary" column (now a link) */
+
+td.bz_short_desc_column a {
+    color: black;
+}
+
+td.bz_short_desc_column a:hover {
+    text-decoration: underline;
+}
+
 /* Make the bug ID bold */
 
 .bz_id_column{
