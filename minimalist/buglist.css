@@ -176,3 +176,13 @@ span[title="Opera"] {
     color: transparent;
     background: url(buglist/browser_o-icon.png) no-repeat;
 }
+
+span[title="Safari on iOS"] {
+    color: transparent;
+    background: url(buglist/browser_safari_ios.png) no-repeat;
+}
+
+span[title="Android"] {
+    color: transparent;
+    background: url(buglist/browser_android.png) no-repeat;
+}
