@@ -1,4 +1,6 @@
-# Bugzilla skin: "minimalist"
+# minimalist
+
+minimalist is a skin for Bugzilla (compatible with release 4.0).
 
 <img src="http://toddmazierski.com/wp-content/uploads/2010/10/minimalist-skin.png">
 
